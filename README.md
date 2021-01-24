@@ -19,7 +19,7 @@ import schedule
 import time
 
 ####Code can be found on my Github linked below
-> [Software Demo Video](https://youtu.be/QfXsB_5oCIw)
+> [Github](https://github.com/hewentto)
 
 # Useful Websites
 
