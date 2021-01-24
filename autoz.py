@@ -78,7 +78,7 @@ schedule.every().thursday.at(str(classes_instances[1].class_time)).do(job1)
 schedule.every().thursday.at(str(classes_instances[3].class_time)).do(job3)
 schedule.every().thursday.at(str(classes_instances[4].class_time)).do(job4)
 
-schedule.every(10).seconds.do(job)
+schedule.every(5).seconds.do(job)
 
 
 

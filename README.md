@@ -1,30 +1,35 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+- This is a python script that reads in  xlsx data containing my college schedule for zoom classes and automatically logs me in to class at the correct times.
+- This was a good program to help me learn more about how to find different libraries for my purposes and how to trouble shoot my code when using a library for the first time.
+- I also was just introduced to using pandas for small databases so was able to increase my knowledge on how that worked.
 
-{Provide a description the software that you wrote to demonstrate the Python language.}
 
-{Describe your purpose for writing this software.}
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+####I created a software demo for you to see my script working.
+> [Software Demo Video](https://youtu.be/QfXsB_5oCIw)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+All the development of this program was done using VScode
+I used funtions from the following libraries to create this program
+> import webbrowser
+import pandas as pd
+import schedule
+import time
 
-{Describe the programming language that you used and any libraries.}
+####Code can be found on my Github linked below
+> [Software Demo Video](https://youtu.be/QfXsB_5oCIw)
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+I found several websites usefull for the use of these libraries, linked below.
+* [Schedule Library Interface](https://schedule.readthedocs.io/en/stable/api.html)
+* [Python Documentation on classes and class functions](https://docs.python.org/3/tutorial/classes.html)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+There are several things that could really improve this rough first draft
+* Creating this script to run as a background task (allowing me to not have a terminal alwasy open)
+* Automating/Finding a way to loop and create the jobs instead of coding them individually
+* Auotmating/Finding a way to loop and create the scheduler events also instead of doing them invdividually
