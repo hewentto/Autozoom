@@ -6,7 +6,7 @@
 
 
 
-####I created a software demo for you to see my script working.
+#### I created a software demo for you to see my script working.
 > [Software Demo Video](https://youtu.be/QfXsB_5oCIw)
 
 # Development Environment
@@ -18,7 +18,7 @@ import pandas as pd
 import schedule
 import time
 
-####Code can be found on my Github linked below
+#### Code can be found on my Github linked below
 > [Github](https://github.com/hewentto)
 
 # Useful Websites

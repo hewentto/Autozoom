@@ -16,6 +16,7 @@ class Course:
         self.class_days = class_days
         self.class_time = class_time
         self.class_url = class_url
+    # class function to open the web link for the zoom class
     def StartClass(self):
         webbrowser.open_new(self.class_url)
 #Class function that opens zoom link when time is triggered
@@ -32,6 +33,10 @@ for c in classes:
     classes_instances.append(Course(*c))
 
 for instance in classes_instances:
+    # created two lists for future use to help automate the job/event creating
+    # these lists contain all the start times and all the days
+    # will need to find a way to make this a 2 day array that has each day once
+    #with the correct times to start classes in those days
     StartTimes.append(instance.class_time)
     Days.append(instance.class_days)
 
@@ -43,8 +48,8 @@ DaysTimes = [Days,StartTimes]
 
 
 #%%
-#Here I will put a schedule function, maybe in a loop to call the class function whenever the time is right and 
-# increment to the next class time
+#Since I could not find a way to get this done in a for loop, seperate my classes
+# into jobs manually
 def job():
     webbrowser.open_new('https://byui.zoom.us/j/2592059656')
 
@@ -78,11 +83,15 @@ schedule.every().thursday.at(str(classes_instances[1].class_time)).do(job1)
 schedule.every().thursday.at(str(classes_instances[3].class_time)).do(job3)
 schedule.every().thursday.at(str(classes_instances[4].class_time)).do(job4)
 
-schedule.every(5).seconds.do(job)
+
+# This will open my personal zoom link for an example for the video
+# schedule.every(5).seconds.do(job)
 
 
 
-
+# this is the while loop that will continue checking the time for execute the jobs
+# this can be modified also, and will be on the next itteration to help make this program
+# functional as a background task.
 while True:
     schedule.run_pending()
     time.sleep(1)
