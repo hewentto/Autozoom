@@ -50,6 +50,11 @@ DaysTimes = [Days,StartTimes]
 #%%
 #Since I could not find a way to get this done in a for loop, seperate my classes
 # into jobs manually
+
+def working():
+    print("Working...")
+
+
 def job():
     webbrowser.open_new('https://byui.zoom.us/j/2592059656')
 
@@ -83,6 +88,8 @@ schedule.every().thursday.at(str(classes_instances[1].class_time)).do(job1)
 schedule.every().thursday.at(str(classes_instances[3].class_time)).do(job3)
 schedule.every().thursday.at(str(classes_instances[4].class_time)).do(job4)
 
+# this prints out "working..." help give feedback that the script is still on
+schedule.every(5).minutes.do(working)
 
 # This will open my personal zoom link for an example for the video
 # schedule.every(5).seconds.do(job)
@@ -94,7 +101,7 @@ schedule.every().thursday.at(str(classes_instances[4].class_time)).do(job4)
 # functional as a background task.
 while True:
     schedule.run_pending()
-    time.sleep(1)
+    time.sleep(60)
 
 
 #This is the code I will use to open the zoom link for each class
