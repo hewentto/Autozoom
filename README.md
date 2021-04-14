@@ -30,6 +30,6 @@ I found several websites usefull for the use of these libraries, linked below.
 # Future Work
 
 There are several things that could really improve this rough first draft
-* Creating this script to run as a background task (allowing me to not have a terminal alwasy open)
+* Creating this script to run as a background task (allowing me to not have a terminal always open)
 * Automating/Finding a way to loop and create the jobs instead of coding them individually
 * Auotmating/Finding a way to loop and create the scheduler events also instead of doing them invdividually
