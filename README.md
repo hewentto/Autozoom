@@ -5,7 +5,6 @@
 - I also was just introduced to using pandas for small databases so was able to increase my knowledge on how that worked.
 
 
-
 #### I created a software demo for you to see my script working.
 > [Software Demo Video](https://youtu.be/QfXsB_5oCIw)
 
