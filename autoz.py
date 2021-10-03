@@ -46,7 +46,6 @@ DaysTimes = [Days,StartTimes]
 
 
 
-
 #%%
 #Since I could not find a way to get this done in a for loop, seperate my classes
 # into jobs manually
